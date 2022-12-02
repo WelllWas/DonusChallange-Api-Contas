@@ -1,0 +1,18 @@
+###
+POST http://localhost:3000/transactions/transfer
+Content-Type: application/json
+
+{
+    "senderCpf": "00000000000",
+    "receiverCpf": "00000000000",
+    "value": 1000
+}
+
+###
+POST http://localhost:3000/transactions/deposit
+Content-Type: application/json
+
+{
+    "cpf": "00000000000",
+    "value": 1000
+}

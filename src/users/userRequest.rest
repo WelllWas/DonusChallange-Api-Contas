@@ -1,0 +1,27 @@
+### Get All Users
+GET http://localhost:3000/users
+
+### Get User By Id
+GET http://localhost:3000/users/0000000000000000000000
+
+### Create User
+POST http://localhost:3000/users
+Content-Type: application/json
+# Para auxiliar na criação: https://www.4devs.com.br/gerador_de_cpf
+
+{
+    "name": "Fulano",
+    "cpf": "000.000.000-00"
+}
+### Update User
+
+PATCH http://localhost:3000/users/0000000000000000000000
+Content-Type: application/json
+
+{
+    "name": "Fulano Ciclano",
+    "cpf": "000.000.000-00"
+}
+
+### Delete User
+DELETE http://localhost:3000/users/0000000000000000000000
